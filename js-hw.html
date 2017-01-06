@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Web-basic:JavaScript Homework</title>
+    <script src="script.js"></script>
+    <style>
+        li{
+            font-size:20px
+        }
+        h1{
+            color: red
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1> JavaScript </h1> 
+
+    <ol>
+     <li>random(m)</li><br>   
+     <li>max(a, b)</li><br> 
+     <li>lastChar(arr)</li><br> 
+     <li>squares(a, b)</li><br> 
+     <li>leapYear(y)</li> 
+    </ol>
+    
+    <script>
+        // random(m) : random number 1~M
+        function random(m){
+            var num = Math.floor(Math.random()*m+1); 
+            return num;
+        }
+
+        // max(a,b) : return larger one
+        function max(a,b){
+           if(a>b){
+               var max=a; 
+               return max; 
+           } 
+           else{
+               var max=b; 
+               return max; 
+           }
+        }
+
+        //lastChar(arr)
+        function lastChar(arr){
+           var char=arr[arr.length-1]
+           return char;
+        }
+
+        //squares(a, b)
+        function squares(a,b){
+           var result = a*a+b*b;
+           return result;
+        }
+
+        //leapYear(y)
+        function leapYear(y){
+           if((y%4===0 && y%100>0)||(y%400===0)){ 
+               return "yes"; 
+           }
+           else{
+               return "no"; 
+           }
+        }
+    
+    </script>
+
+
+</body>
+
+</html>
